@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* HEADER */
+header{
+    height: 120px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;
+    background-color: white;
+    animation: adjust-header linear both;
+    animation-timeline: scroll();
+    animation-range:0 200px;
+    z-index: 5000;
+    border-bottom: 3px solid #439c1a;
+}
+
+header .iconoheader{
+    display: none;
+}
+nav{
+    display: flex;
+    height: 100%;
+    align-items: end;
+}
+.menutext{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    color: var(--text-gray-900, #000);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 40px;
+}
+.menutext:hover{
+    color: #ffffff;
+    background-color: #439c1a;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;    
+}
+
+.menutext:hover::after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 10px; /* Ajusta la altura del subrayado según tus preferencias */
+    bottom: 1px; /* Ajusta la distancia del subrayado desde el texto */
+    background-color: #bcc908;
+    left: 25px;
+}
+.menutext2{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50%;
+    color: var(--text-gray-900, #000);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 50px;
+}
+.menutext2:hover{
+    color: #ffffff;
+    background-color: #439c1a;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;    
+    height: 100%;
+}
+
+.menutext2:hover::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 10px; /* Ajusta la altura del subrayado según tus preferencias */
+    bottom: 1px; /* Ajusta la distancia del subrayado desde el texto */
+    background-color: #bcc908;
+    left: 25px;
+}
+.logo{
+    margin-top: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.pagos{
+    padding: 20px 250px;
+
+}
+#modalPagar input {
+    border: none;
+    outline: none; 
+    background-color: transparent;
+}
+
+.titulopagos{
+    padding: 20px 0 0 10px;
+    font-weight: bold;
+}
+
+.formularionombrescompletos{
+    padding-top: 10px;
+}
+#formulario{
+    padding-top: 10px;
+
+}
+.selecthora{
+    padding-top: 10px;
+}
+.botoncomprar{
+    padding: 10px 20px;
+    background-color: #439c1a;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 15px;
+    border: none;
+}
+.botoncomprar:active{
+    background-color: #adbd20;
+
+}
+.divboton{
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+}
+.headercard{
+    display: flex;
+    justify-content: space-between;
+}
+.totalpagar{
+    display: flex;
+    justify-content: space-between;
+}
+.botonpagar{
+    padding: 10px 20px;
+    background-color: #da2222;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 15px;
+    border: none;
+}
+.botonpagar:active{
+    background-color: #439c1a;
+}
+.totalpagar{
+    padding: 10px 20px;
+}
+.calculopagar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.modalnpersonas{
+    color: white;
+    font-size: 20px;
+    width: 20px;
+}

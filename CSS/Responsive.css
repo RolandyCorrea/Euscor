@@ -1,0 +1,686 @@
+@media screen and (max-width:480px) {
+    header{
+        justify-content: center;
+        padding: 15px;
+        height: 80px;
+    }
+    nav{
+        display: none;
+
+    }
+    .logo{
+        margin-left: 0;
+        position: absolute;
+        z-index: 2;
+        max-width: 100px;
+        max-height: 100px;
+    }
+    header .iconoheader{
+        display: none;
+        
+    }
+
+    nav a{
+        padding: 0;
+        font-size: 17px;
+    }
+    nav a:hover{
+        color: #e2c15c;
+        background-color: #0d2033;
+        font-weight: bold;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+    }
+    .menutext{
+        padding-left: 0;
+        padding-right: 0;
+        height: 10%;
+
+    }
+    .menutext:hover{
+        color: #ffffff;
+        background-color: #439c1a;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;    
+        height: 10%;
+    }
+    
+    .menutext:hover::after {
+    display: none;
+    }
+    .navmenu.mobile-menu{
+        margin-left: 0;
+    }
+    .slider-image{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }    
+    .slider-text1{
+        left: 30%;
+        width: 30%;
+        font-size: 20px;
+    }
+    .botonslider{
+        font-size: 10px;
+        width: 120px;
+        margin-left: 130px;
+        padding: 9px 5px;
+    }
+    .botonslider2{
+        font-size: 10px;
+        width: 120px;
+        margin-right: 130px;
+        padding: 9px 5px;
+    }
+     /*SECTION 2*/
+    .section2{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .textosection2{
+        width: 100%;
+        height: 100%;
+
+        padding: 50px 30px ;
+    }
+    .linea1{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .linea2{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .linea3{
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .linea4{
+        margin-top:20px;
+        width: 80%;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+     }
+     .botonsection2{
+        width: 78%;
+        margin-top: 15px;
+        font-size: 16px;
+        padding: 3px;
+     }
+     .telefonosection2{
+        margin-top: 15px;
+        color: #3a3a3a;
+        text-decoration: none;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .telefonosection2:hover{
+        color: #000;
+        text-decoration: none;
+    }
+    .telefonosection2 i{
+        background-color: #959f0b;
+        color: white;
+        padding: 8px;
+        border-radius: 50px;
+        font-size: 18px;
+    }
+    /* SERVICIOS */ 
+    .sectionservicios{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 10px;        
+    }
+    .textoservicios{
+        font-weight: bold;
+        color: #000;
+        margin-top: 15px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+    }
+    .servicio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        gap: 25px;
+        margin: 10px;
+        padding: 15px;
+        border: 1px solid rgb(97, 173, 21);
+        box-shadow: 0 2px 5px rgb(97, 173, 21);
+        border-radius: 15px;
+    }
+    .servicio:hover{
+        padding: 15px;
+        border: 1px solid #959f0b;
+        box-shadow: 0 2px 5px #959f0b;
+        border-radius: 15px;
+    }
+    .iconoservicio i{
+        color: rgb(97, 173, 21);
+        font-size: 35px;
+        text-align: center;
+    }
+    .titulotextos{
+        text-align: center;
+        line-height: 30px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #000;
+    }
+    .parrafotextos{
+        text-align: justify;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1rem;
+        color: #000;
+    }
+    .botonservice{
+        margin-top: 0;
+    }
+    .textoservicio a{
+        padding: 6px 12px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    /*TE OFRECEMOS*/
+    .titulofrecemos {
+        font-size: 20px;
+        padding: 50px;
+    }
+    /*SECCION FLOTA*/
+    .sectionflota{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .flotas {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .textoflota a{
+        padding: 10px 12px;
+        border-radius: 5px;
+        width: 40%;
+        font-size: 12px;
+    }
+/* RESERVA */
+    .reserva{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .imagenreserva{
+        display: none;
+    }
+
+    .formularioreserva{
+        padding: 80px 35px ;
+    }
+    .reservastext{
+        font-size: 35px;
+    }
+    .enlineatext{
+        font-size: 35px;
+    }
+    .formgrup span{
+        width: 30%;
+        font-size: 12px;
+    }
+    .formgrup input{
+        width: 70%;
+        font-size: 12px;
+    }
+    .formgrup2 span{
+        width: 30%;
+        font-size: 12px;
+    }
+    .formgrup2 input{
+        width: 70%;
+        font-size: 12px;
+    }
+    .reservacontacto{
+        flex-direction: column;
+    }
+    .selectgrup{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .boton{
+        margin-top: 12px;
+        width: 53%;
+        font-size: 13px;
+    }    
+/* FOOTER */
+
+    .footer{
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagenfooter{
+        justify-content: center;
+    }
+    .logofooter{
+        width:50%;
+        height: 100%;
+        padding: 15px;
+    }
+    .textfooter{
+        width: 100%;
+        height: 100%;
+    }
+    .encuentranos{
+        align-items: center;
+        margin-left: 0;
+
+    }
+    .icons{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    .textoencuentranos{
+        height: 100%;
+
+    }
+    .textocomunicate{
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .subfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .subfooter p {
+        font-size: 10px;
+    }
+    .estudio{
+        display: none;
+    }
+
+    .listitems{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    header{
+        justify-content: space-between;
+        padding: 15px;
+        height: 80px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #161616;
+        width: 100%;
+        height: 100vh;
+        top: 0;        
+        left: 0;
+        position: absolute;
+        z-index: 1;
+        justify-content: center;
+        margin-left: -100%;
+    }
+    .logo{
+        margin-left: 0;
+        position: absolute;
+        z-index: 2;
+        max-width: 100px;
+        max-height: 100px;
+    }
+    header .iconoheader{
+        display: inherit;
+        font-size: 30px;
+        color: #000000;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    nav a{
+        padding: 25px;
+        font-size: 17px;
+    }
+    nav a:hover{
+        color: #e2c15c;
+        background-color: #0d2033;
+        font-weight: bold;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+    }
+    .navmenu.mobile-menu{
+        margin-left: 0;
+    }
+    .slider-image{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }    
+    .slider-text1{
+        left: 30%;
+        width: 30%;
+        font-size: 20px;
+    }
+    .botonslider{
+        font-size: 10px;
+        width: 120px;
+        margin-left: 130px;
+        padding: 9px 5px;
+    }
+    .botonslider2{
+        font-size: 10px;
+        width: 120px;
+        margin-right: 130px;
+        padding: 9px 5px;
+    }
+     /*SECTION 2*/
+    .section2{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .textosection2{
+        width: 100%;
+        height: 100%;
+
+        padding: 50px 30px ;
+    }
+    .linea1{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .linea2{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .linea3{
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .linea4{
+        margin-top:20px;
+        width: 80%;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+     }
+     .botonsection2{
+        width: 78%;
+        margin-top: 15px;
+        font-size: 16px;
+        padding: 3px;
+     }
+     .telefonosection2{
+        margin-top: 15px;
+        color: #3a3a3a;
+        text-decoration: none;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .telefonosection2:hover{
+        color: #000;
+        text-decoration: none;
+    }
+    .telefonosection2 i{
+        background-color: #959f0b;
+        color: white;
+        padding: 8px;
+        border-radius: 50px;
+        font-size: 18px;
+    }
+    /* SERVICIOS */ 
+    .sectionservicios{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 10px;        
+    }
+    .textoservicios{
+        font-weight: bold;
+        color: #000;
+        margin-top: 15px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+    }
+    .servicio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        gap: 25px;
+        margin: 10px;
+        padding: 15px;
+        border: 1px solid rgb(97, 173, 21);
+        box-shadow: 0 2px 5px rgb(97, 173, 21);
+        border-radius: 15px;
+    }
+    .servicio:hover{
+        padding: 15px;
+        border: 1px solid #959f0b;
+        box-shadow: 0 2px 5px #959f0b;
+        border-radius: 15px;
+    }
+    .iconoservicio i{
+        color: rgb(97, 173, 21);
+        font-size: 35px;
+        text-align: center;
+    }
+    .titulotextos{
+        text-align: center;
+        line-height: 30px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #000;
+    }
+    .parrafotextos{
+        text-align: justify;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1rem;
+        color: #000;
+    }
+    .botonservice{
+        margin-top: 0;
+    }
+    .textoservicio a{
+        padding: 6px 12px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    /*TE OFRECEMOS*/
+    .titulofrecemos {
+        font-size: 20px;
+        padding: 50px;
+    }
+    /*SECCION FLOTA*/
+    .sectionflota{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .flotas {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .textoflota a{
+        padding: 10px 12px;
+        border-radius: 5px;
+        width: 40%;
+        font-size: 12px;
+    }
+/* RESERVA */
+    .reserva{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .imagenreserva{
+        display: none;
+    }
+
+    .formularioreserva{
+        padding: 80px 35px ;
+    }
+    .reservastext{
+        font-size: 35px;
+    }
+    .enlineatext{
+        font-size: 35px;
+    }
+    .formgrup span{
+        width: 30%;
+        font-size: 12px;
+    }
+    .formgrup input{
+        width: 70%;
+        font-size: 12px;
+    }
+    .formgrup2 span{
+        width: 30%;
+        font-size: 12px;
+    }
+    .formgrup2 input{
+        width: 70%;
+        font-size: 12px;
+    }
+    .reservacontacto{
+        flex-direction: column;
+    }
+    .selectgrup{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .boton{
+        margin-top: 12px;
+        width: 53%;
+        font-size: 13px;
+    }    
+/* FOOTER */
+
+    .footer{
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagenfooter{
+        justify-content: center;
+    }
+    .logofooter{
+        width:50%;
+        height: 100%;
+        padding: 15px;
+    }
+    .textfooter{
+        display: flex;
+        flex-direction: column;
+        height: 238px;
+        align-items: center;
+        justify-content: center;
+    }
+    .encuentranos{
+        align-items: center;
+        margin-left: 0;
+
+    }
+    .icons{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    .textoencuentranos{
+        height: 100%;
+
+    }
+    .textocomunicate{
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .subfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .subfooter p {
+        font-size: 10px;
+    }
+    .estudio{
+        display: none;
+    }
+
+    .listitems{
+        justify-content: center;
+        align-items: center;
+    }
+}

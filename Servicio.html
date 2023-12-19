@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6sRVf5mo9IBKysZROeRKBfJ5n5+P8E6/WEQbVRqOp7zwwWTdo2QjlJ5A44f8F6X" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/18ac9ee7f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/Servicio.css">
+    <link rel="stylesheet" href="./CSS/ResponsiveServicio.css">
+
+    <title>Transportes Eustaquio Correa</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Recursos/logo.png" alt="">
+        <nav class="navmenu">
+            <a class="menutext" href="./index.html">Inicio</a>
+        </nav>
+        <a class="iconoheader"><i class="fa-solid fa-bars"></i></a>
+    </header> 
+    <section class="pagos">
+        <div class="seccionpasaje">
+            <h5 class="titulopagos">PEDIDO DE PASAJES</h5>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <form id="formulario">
+                            <label for="exampleFormControlInput1" class="form-label">DNI</label>
+                            <input type="text" class="form-control" id="dni" placeholder="Ingreso su DNI" required>
+                        <div class="row">
+                            <div class="col-8">
+                                <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombrecompleto" placeholder="Ingreso Nombre Completo" required>
+                            </div> 
+                            <div class="col-4">
+                                <label for="personas" class="form-label">Personas</label>
+                                <select id="personas" class="form-select" aria-label="Default select example" required>
+                                  <option value="1" selected>1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                              </select> 
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="tipoTransporte" class="form-label selecthora">Transporte</label>
+                                <select id="tipoTransporte" class="form-select" aria-label="Default select example" required>
+                                    <option selected disabled>Transporte</option>
+                                    <option value="bus" >Bus (S/20.5 c/u)</option>
+                                    <option value="minibus">Minibus (S/7 c/u)</option>
+                                    <option value="custer">Custer (S/4.5 c/u)</option>
+                                  </select>                      
+                            </div>    
+                            <div class="col-6">
+                                <label for="horario" class="form-label selecthora">Hora</label>
+                                <select id="horario" class="form-select" aria-label="Default select example" required>
+                                  <option selected disabled>Horario</option>
+                              </select> 
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingreso Email" required>
+                        </div>   
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                            <input type="text" class="form-control" id="telefono" placeholder="telefono" required>
+                        </div> 
+                        <div class="divboton">
+                            <button  class="botoncomprar">Pre - Compra</button>
+                        </div> 
+
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <div class="boletacompra">
+                        <div class="card ">
+                            <div class="card-header card text-white bg-success mb-3 headercard text-center">
+                              <h4>Boleta de Compra <i class="fa-solid fa-circle-user"></i> <span class="npersonas"> </span></h4>
+                            </div>
+                            <div class="card-body">
+                              <p>Nombres Completos: <span class="cardnombres"></span></p>
+                              <p>DNI: <span class="carddni"></span></p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>Transporte: <span class="cardtransporte"> </span></p>
+
+                                </div>
+                                <div class="col-6">
+                                    <p>Hora: <span class="cardhora"></span></p>
+
+                                </div>
+                            </div>
+                            <p>Correo Electrónico: <span class="cardcorreo"></span></p>
+                            <p>Telefono: <span class="cardtelefono"></span></p>
+
+                            <div class="calculopagar">
+                                <p>Sub Total: <span class="cardsubtotal"></span></p>
+                                <p>IGV: <span class="cardigv"></span></p>
+
+                            </div>
+                            </div>
+                            <div class="card-footer totalpagar">
+                                <span>Total Pagar S/<Span class="totalapagar"></Span></span>
+                                <button type="button" class="botonpagar" data-bs-toggle="modal" data-bs-target="#modalPagar">
+                                    Pagar
+                                </button>                        
+                            </div>
+                            <div class="modal fade" id="modalPagar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <form action="https://formsubmit.co/tchirinosjosema@crece.uss.edu.pe" method="POST">
+
+                                            <div class="modal-header bg-warning text-white">
+                                                <h4>Boleta de Compra <i class="fa-solid fa-circle-user"></i> <input type="text" class="modalnpersonas" name="Personas" readonly></h4>
+
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Nombres Completos: <input type="text" class="modalnombres" name="Nombres" readonly></p>
+                                                <p>DNI: <input type="text" class="modaldni" name="DNI" readonly></p>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p>Transporte: <input type="text" class="modaltransporte" name="Transporte" readonly></p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p>Hora: <input type="text" class="modalhora" name="Hora" readonly></p>
+                                                    </div>
+                                                </div>
+                                                <p>TOTAL A PAGAR: S/<input type="text" class="modaltotalpagar" name="Total a Pagar" readonly></p>
+                                                <p>CODIGO: <input type="text" class="modalcodigocompra" name="Codigo" readonly></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                <button class="btn btn-primary" type="submit" value="Enviar">Registrar Boletos</button>
+                                                <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+                                                <input type="hidden" name="_captcha" value="false">                                            
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+ 
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./JS/Servicio.js"></script>
+    
+</body>
+</html>
